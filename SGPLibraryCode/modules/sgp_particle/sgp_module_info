@@ -1,0 +1,21 @@
+{
+  "id":             "sgp_particle",
+  "name":           "SGPEngine Particle handling classes",
+  "version":        "1.0.00",
+  "description":    "Classes for Particle System, etc.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",   "version": "matching" },
+                      { "id": "sgp_math",   "version": "matching" } ],
+
+  "include":        "sgp_particle.h",
+
+  "compile":        [ { "file": "sgp_particle.cpp", "target": "! xcode" },
+                      { "file": "sgp_particle.mm",  "target": "xcode" } ],
+
+  "browse":         [ "core/*",
+                      "extension/*" ],
+
+  "LinuxLibs":      "X11"
+}

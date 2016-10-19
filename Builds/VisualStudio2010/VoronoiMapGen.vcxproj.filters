@@ -1,0 +1,1859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SGPEngine Library Code">
+      <UniqueIdentifier>{8B4D1BAA-6DB4-CAEC-A0FA-271F354D5C61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules">
+      <UniqueIdentifier>{422C46B7-0467-2DB0-BF3C-16DFCAFD69AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core">
+      <UniqueIdentifier>{d137525d-7057-4eed-bf9b-ad871ae53534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\system">
+      <UniqueIdentifier>{f29d2124-c951-4582-8158-e37b380145ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\text">
+      <UniqueIdentifier>{adf79969-a824-4671-9037-43f02018409a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\common">
+      <UniqueIdentifier>{46e713c7-4c37-4fcd-b43d-6571f8c0e6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\streams">
+      <UniqueIdentifier>{7e4ac870-f600-44f3-bf66-4d2781d11438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\time">
+      <UniqueIdentifier>{25fc8d55-89eb-4162-aae5-59ce558433ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\threads">
+      <UniqueIdentifier>{af723563-25c9-4666-8dbb-ab19ec4f8995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\files">
+      <UniqueIdentifier>{68573208-0d8b-496a-829a-744eddd3ad41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\native">
+      <UniqueIdentifier>{84c1f0da-6cb9-45ef-a89d-42e8e25d7519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render">
+      <UniqueIdentifier>{08b38dd0-e6aa-4355-b4b6-5eddbdc95b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\opengl">
+      <UniqueIdentifier>{ad11c7c4-3eaf-4cb3-a4fe-9f55ec1e274f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\native">
+      <UniqueIdentifier>{34aac096-379a-4573-8e0c-93c26b68e444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\renderinterface">
+      <UniqueIdentifier>{3d8df0ab-340b-4dfb-ac10-0b68df22b651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\shadersystem">
+      <UniqueIdentifier>{f5c96a2f-4713-41e3-8f18-5da7a620982b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\font">
+      <UniqueIdentifier>{8b80c831-15be-420a-a237-863fe3a49962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\log">
+      <UniqueIdentifier>{8de279df-c154-4682-8ca4-a9c5dd946d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_enginedevice">
+      <UniqueIdentifier>{dc953f05-bef3-4626-bdce-028fbb042aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_enginedevice\enginedevice">
+      <UniqueIdentifier>{6946cc04-cfdd-43ea-8960-5a3e7634251e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_enginedevice\native">
+      <UniqueIdentifier>{e805bad1-8409-4dba-8a8b-c6061773641d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\materialsystem">
+      <UniqueIdentifier>{4699cc7e-da5c-4e7d-97a4-47c72e669e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\opengl\GLSL">
+      <UniqueIdentifier>{321c4414-28b8-4368-b9b2-7bee2237d494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\materialsystem\MaterialString">
+      <UniqueIdentifier>{7aebcc0c-7eee-4252-9069-d9beec373af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\vertexsystem">
+      <UniqueIdentifier>{a3161866-c4b8-42cd-8954-dcfdba05b53e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\texturesystem">
+      <UniqueIdentifier>{cd8ece79-f962-4f27-b571-f8d02ab0f228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_model">
+      <UniqueIdentifier>{5ba4595d-33d3-45be-9592-1022c91c6335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_model\model">
+      <UniqueIdentifier>{82367b04-65e5-4da2-a259-caed29333640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_core\xml">
+      <UniqueIdentifier>{35e38214-a6ab-4100-996f-fcad1eb95451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\modelsystem">
+      <UniqueIdentifier>{146dfc47-9e4a-4e36-a6fb-eb249f727119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\instance">
+      <UniqueIdentifier>{cfa0b94f-c8e4-445a-bddc-09e6fdf2fe8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_math">
+      <UniqueIdentifier>{0d0af212-aa31-42b7-a31e-c1c52b70ebc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_math\math">
+      <UniqueIdentifier>{5bda7526-daad-46fc-8fb1-56f7b57a3407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle">
+      <UniqueIdentifier>{5956170e-5d69-4b80-ad76-2ac2efae5ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\core">
+      <UniqueIdentifier>{dc5b684f-ec53-4b43-b05e-60da19dc605a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\extension">
+      <UniqueIdentifier>{6a8bb200-c0bf-4ff1-a48c-4831b4d116a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\extension\zones">
+      <UniqueIdentifier>{3cbc1adb-4e4d-414e-b5b5-670aef498a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\extension\emitters">
+      <UniqueIdentifier>{59ddb630-52ca-432e-8505-790bd458005a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\extension\modifiers">
+      <UniqueIdentifier>{54b0b920-a706-4397-93d7-aa43860a09d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_particle\extension\renderers">
+      <UniqueIdentifier>{e062a89b-32ce-402f-bba2-f45e010a58c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\particlesystem">
+      <UniqueIdentifier>{144c8d2a-24bd-4ebd-b025-1ba6f826fa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world">
+      <UniqueIdentifier>{1d60f3bc-c8d0-41ed-b303-0483b9e1fc65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\terrain">
+      <UniqueIdentifier>{b82986e7-536a-4b7a-ae35-d7413780d31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\quadtree">
+      <UniqueIdentifier>{31449250-bdcf-4640-a532-48cbf35ccaf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\world">
+      <UniqueIdentifier>{cdaf9a56-2e6e-4277-b655-9582bcfb6f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\sceneobject">
+      <UniqueIdentifier>{bf1df55e-9ea6-4d73-866e-fb5f85507033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\worldsystem">
+      <UniqueIdentifier>{1866ab68-c8e9-4b95-b36a-5b8dd6972a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\skydome">
+      <UniqueIdentifier>{7a173329-ee17-4bef-8e6d-8ed3cd3fee72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\scattering">
+      <UniqueIdentifier>{704f0860-fd18-4dea-bc01-13e6fa018f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\water">
+      <UniqueIdentifier>{b7028b51-6f57-4c68-850f-991b695c4b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_world\grass">
+      <UniqueIdentifier>{e96eeec0-cc2e-4a21-846f-b9e76debe5ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\materialsystem\ModifierString">
+      <UniqueIdentifier>{fd433b92-ff88-43fe-bb21-cccec69e8ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\effectsystem">
+      <UniqueIdentifier>{60bd3cb6-1779-4128-81fb-9cc826547c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\opengles2">
+      <UniqueIdentifier>{ca155b5e-9ad7-4dd1-af7c-209652fbee98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\opengles2\PVRTexture">
+      <UniqueIdentifier>{7927d6af-e231-4899-abee-2368efd2fbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\opengles2\GLSLES2">
+      <UniqueIdentifier>{a5bbcd59-c9cc-4cb2-a5e4-99d0dd139251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SGPEngine Modules\sgp_render\camera">
+      <UniqueIdentifier>{20405eed-d1da-4930-b846-f86c2925bd4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen">
+      <UniqueIdentifier>{298966F0-8427-DAEE-559C-F41E2F47C58E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\Source">
+      <UniqueIdentifier>{01698A78-13A3-8356-61E4-7CD8CF47DAFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\Source\shaders">
+      <UniqueIdentifier>{ce1693f6-c20c-4173-a034-d3752fbcb3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\ImGUI">
+      <UniqueIdentifier>{83f4263a-3125-45a8-b704-302561207ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\Model">
+      <UniqueIdentifier>{23edb604-6fdc-4899-87fc-f83cfeefa548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\FileDialog">
+      <UniqueIdentifier>{66819e98-5582-491c-aa0c-9a6e2fb62ce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\image">
+      <UniqueIdentifier>{ef4063fa-a95c-4cf2-a377-eec8b7fb0608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VoronoiMapGen\pugixml">
+      <UniqueIdentifier>{0e35e696-cde3-404f-a431-6dc372fe416a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\sgp_core.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_SystemStats.cpp">
+      <Filter>SGPEngine Modules\sgp_core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharacterFunctions.cpp">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\sgp_math.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_String.cpp">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_OutputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_MemoryBlock.cpp">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryOutputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryInputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_Threads.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_SystemStats.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_RelativeTime.cpp">
+      <Filter>SGPEngine Modules\sgp_core\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_Time.cpp">
+      <Filter>SGPEngine Modules\sgp_core\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringArray.cpp">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_File.cpp">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Result.cpp">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileOutputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileInputStream.cpp">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_DirectoryIterator.cpp">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_Files.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Matrix4x4.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Ray.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Plane.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_AABBox.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_OBBox.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Polygon.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Quaternion.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringPool.cpp">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Colour.cpp">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_posix_NamedPipe.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_SystemStats.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_Threads.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_Files.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_Threads.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_Files.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_SystemStats.cpp">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_opengl.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLHelpers.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_render.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLExtensionHandler.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLee.c">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_Logger.cpp">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_FileLogger.cpp">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderDevice.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_ConsoleLogger.cpp">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_enginedevice.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_VideoModeList.cpp">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\native\sgp_Device_win32.cpp">
+      <Filter>SGPEngine Modules\sgp_enginedevice\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_device.cpp">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_win32.cpp">
+      <Filter>SGPEngine Modules\sgp_render\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCamera.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderTGA.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ColorConverter.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderDDS.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTexture.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageUncompressed.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageDDS.cpp">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Uuid.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSLShader.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLShaderManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_AbstractMaterial.cpp">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialProperties.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterial.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialRender.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderBatch.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialSystem.cpp">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexCacheManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCacheBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFontBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTTFFont.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_model.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileBone.cpp">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMesh.cpp">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlDocument.cpp">
+      <Filter>SGPEngine Modules\sgp_core\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlElement.cpp">
+      <Filter>SGPEngine Modules\sgp_core\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_FileInputSource.cpp">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\modelsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelResource.cpp">
+      <Filter>SGPEngine Modules\sgp_render\modelsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Thread.cpp">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_ResourceMultiThreadLoader.cpp">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TestSample_Win32Console.cpp">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTextureBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_SkeletonMeshInstance.cpp">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_InstanceManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_particle.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Define.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Zone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Registerable.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Transformable.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_BufferHandler.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_System.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Particle.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Interpolator.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Model.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Emitter.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Modifier.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Group.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Factory.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_AABBoxZone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_SphereZone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PlaneZone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_RingZone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_LineZone.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_SphericEmitter.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_RandomEmitter.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_NormalEmitter.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_Obstacle.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_LinearForce.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_PointMass.cpp">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleSystem.cpp">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticlePointRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleDynamicBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleLineRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleQuadRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Frustum.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_world.cpp">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\quadtree\sgp_QuadTree.cpp">
+      <Filter>SGPEngine Modules\sgp_world\quadtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_Terrain.cpp">
+      <Filter>SGPEngine Modules\sgp_world\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainChunk.cpp">
+      <Filter>SGPEngine Modules\sgp_world\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_StaticMeshInstance.cpp">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTerrainRender.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSkydomeRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\skydome\sgp_Skydome.cpp">
+      <Filter>SGPEngine Modules\sgp_world\skydome</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWorldSystemManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFrameBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWaterRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\grass\sgp_Grass.cpp">
+      <Filter>SGPEngine Modules\sgp_world\grass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLGrassRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldMap.cpp">
+      <Filter>SGPEngine Modules\sgp_world\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_CollisionSet.cpp">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_MeshComponent.cpp">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectInstance.cpp">
+      <Filter>SGPEngine Modules\sgp_render\effectsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectSystemManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\effectsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_opengles2.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTDecompress.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTError.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTgles2Ext.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTexture.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTextureAPI.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImageLoaderPVRTC.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImagePVRTC.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderDevice.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Texture.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TTFFont.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FontBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Camera.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ShaderManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLSLES2Shader.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ExtensionHandler.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CacheBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexCacheManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Material.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialProperties.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialRender.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderBatch.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\camera\sgp_MovementController.cpp">
+      <Filter>SGPEngine Modules\sgp_render\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleDynamicBuffer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleLineRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticlePointRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleQuadRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2SkydomeRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WorldSystemManager.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TerrainRender.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2GrassRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FrameBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WaterRenderer.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Random.cpp">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLPixelBufferObject.cpp">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Imgui\imgui.cpp">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Imgui\imgui_draw.cpp">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\filedialog\tinyfiledialogs.cpp">
+      <Filter>VoronoiMapGen\FileDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\OuterOpenGLShaderManager.cpp">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\model\Center.cpp">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\model\MapGen.cpp">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\model\NoisyEdges.cpp">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\model\PoissonDiskSampling.cpp">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\pugixml\pugixml.cpp">
+      <Filter>VoronoiMapGen\pugixml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SGPLibraryCode\AppConfig.h">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\SGPHeader.h">
+      <Filter>SGPEngine Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\sgp_core.h">
+      <Filter>SGPEngine Modules\sgp_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_PlatformDefs.h">
+      <Filter>SGPEngine Modules\sgp_core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_StandardHeader.h">
+      <Filter>SGPEngine Modules\sgp_core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_TargetPlatform.h">
+      <Filter>SGPEngine Modules\sgp_core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_BasicNativeHeaders.h">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_SystemStats.h">
+      <Filter>SGPEngine Modules\sgp_core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharacterFunctions.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_ASCII.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF8.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF16.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF32.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\sgp_math.h">
+      <Filter>SGPEngine Modules\sgp_math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_MathHelper.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_String.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Atomic.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_NewLine.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Memory.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ByteOrder.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_HeapBlock.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_OutputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_MemoryBlock.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ScopedPointer.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryInputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryOutputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_RelativeTime.h">
+      <Filter>SGPEngine Modules\sgp_core\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_Time.h">
+      <Filter>SGPEngine Modules\sgp_core\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_DataType.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_CriticalSection.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_ScopedLock.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ReferenceCountedObject.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Array.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ArrayAllocationBase.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ElementComparator.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringArray.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_File.h">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Result.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileInputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileOutputStream.h">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_DirectoryIterator.h">
+      <Filter>SGPEngine Modules\sgp_core\files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_DynamicLibrary.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Process.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_OwnedArray.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_LinkedListPointer.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_HashMap.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_RingFIFO.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ArrayStack.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector4D.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector2D.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector3D.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Matrix4x4.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Plane.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Ray.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_AABBox.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_OBBox.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Polygon.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Quaternion.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringPool.h">
+      <Filter>SGPEngine Modules\sgp_core\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Colour.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_osx_ObjCHelpers.h">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_posix_SharedCode.h">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_JNIHelpers.h">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_render.h">
+      <Filter>SGPEngine Modules\sgp_render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_android.h">
+      <Filter>SGPEngine Modules\sgp_render\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_ios.h">
+      <Filter>SGPEngine Modules\sgp_render\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_linux.h">
+      <Filter>SGPEngine Modules\sgp_render\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_osx.h">
+      <Filter>SGPEngine Modules\sgp_render\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_opengl.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLHelpers.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_DriverFeatures.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_MaterialFlags.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\shadersystem\sgp_ShaderTypes.h">
+      <Filter>SGPEngine Modules\sgp_render\shadersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontDrawFlags.h">
+      <Filter>SGPEngine Modules\sgp_render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_RenderDevice.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_PixelFormats.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLExtensionHandler.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLee.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_FileLogger.h">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_Logger.h">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_Viewport.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderDevice.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLConfig.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Singleton.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_ConsoleLogger.h">
+      <Filter>SGPEngine Modules\sgp_core\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_enginedevice.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_event.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_CreationParameter.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_device.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\native\sgp_Device_win32.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_VideoModeList.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_DriverTypes.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_EngineTimer.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCamera.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Image.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Texture.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoader.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_PackStruct.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_UnPackStruct.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderTGA.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ColorConverter.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderDDS.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTexture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureManager.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Blit.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageUncompressed.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageDDS.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Uuid.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSLShader.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\shadersystem\sgp_ShaderManager.h">
+      <Filter>SGPEngine Modules\sgp_render\shadersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLShaderManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_AbstractMaterial.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialProperties.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialProperties.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterial.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderBatch.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialRender.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialSystem.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\Font.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\line.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\opaque_base.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\transparent.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexCacheManager.h">
+      <Filter>SGPEngine Modules\sgp_render\vertexsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexCacheManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCacheBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexTypes.h">
+      <Filter>SGPEngine Modules\sgp_render\vertexsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_HardwareBufferType.h">
+      <Filter>SGPEngine Modules\sgp_render\vertexsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_PrimitiveTypes.h">
+      <Filter>SGPEngine Modules\sgp_render\vertexsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_SortedSet.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_ui.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_texture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_texture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexBufferSkin.h">
+      <Filter>SGPEngine Modules\sgp_render\vertexsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontManager.h">
+      <Filter>SGPEngine Modules\sgp_render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFontBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTTFFont.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_model.h">
+      <Filter>SGPEngine Modules\sgp_model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileBone.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMesh.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlDocument.h">
+      <Filter>SGPEngine Modules\sgp_core\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlElement.h">
+      <Filter>SGPEngine Modules\sgp_core\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputSource.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_FileInputSource.h">
+      <Filter>SGPEngine Modules\sgp_core\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelManager.h">
+      <Filter>SGPEngine Modules\sgp_render\modelsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelResource.h">
+      <Filter>SGPEngine Modules\sgp_render\modelsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_WaitableEvent.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Thread.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_SpinLock.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_ThreadLocalValue.h">
+      <Filter>SGPEngine Modules\sgp_core\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_ResourceMultiThreadLoader.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureResource.h">
+      <Filter>SGPEngine Modules\sgp_render\texturesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileSettingFlag.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skeltonanim.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTextureBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_SkeletonMeshInstance.h">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_InstanceManager.h">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_particle.h">
+      <Filter>SGPEngine Modules\sgp_particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Define.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Buffer.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_ArrayBuffer.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Registerable.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Transformable.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_BufferHandler.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_RegWrapper.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Renderer.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_System.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Particle.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Interpolator.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Model.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Pool.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Zone.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Emitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Modifier.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Group.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Factory.h">
+      <Filter>SGPEngine Modules\sgp_particle\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_AABBoxZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PointZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_SphereZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PlaneZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_RingZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_LineZone.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\zones</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_SphericEmitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_RandomEmitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_StaticEmitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_StraightEmitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_NormalEmitter.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\emitters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_Obstacle.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_LinearForce.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_PointMass.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\modifiers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_PointRendererInterface.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_QuadRendererInterface.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_LineRendererInterface.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_Oriented2DRendererInterface.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_Oriented3DRendererInterface.h">
+      <Filter>SGPEngine Modules\sgp_particle\extension\renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleSystem.h">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleManager.h">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\particlesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticlePointRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleDynamicBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_ps.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\particle_addalpha.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleLineRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleQuadRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_line.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\particle_addalpha_line.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_quad.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Frustum.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_world.h">
+      <Filter>SGPEngine Modules\sgp_world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldConfig.h">
+      <Filter>SGPEngine Modules\sgp_world\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\quadtree\sgp_QuadTree.h">
+      <Filter>SGPEngine Modules\sgp_world\quadtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_Terrain.h">
+      <Filter>SGPEngine Modules\sgp_world\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainChunk.h">
+      <Filter>SGPEngine Modules\sgp_world\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldMap.h">
+      <Filter>SGPEngine Modules\sgp_world\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sceneobject\sgp_Object.h">
+      <Filter>SGPEngine Modules\sgp_world\sceneobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_StaticMeshInstance.h">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_PerlinNoise.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainTileShape.h">
+      <Filter>SGPEngine Modules\sgp_world\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\worldsystem\sgp_WorldSystemManager.h">
+      <Filter>SGPEngine Modules\sgp_render\worldsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTerrainRender.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lod0.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lod1.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_veryhigh.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lodblend.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\terrain.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMeshConfigSetting.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\skydome.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSkydomeRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\skydome\sgp_Skydome.h">
+      <Filter>SGPEngine Modules\sgp_world\skydome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWorldSystemManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skydome.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\scattering\sgp_HoffmanPreethem.h">
+      <Filter>SGPEngine Modules\sgp_world\scattering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_hoffmanskydome.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\scattering\sgp_WorldSun.h">
+      <Filter>SGPEngine Modules\sgp_world\scattering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFrameBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_particleParamDef.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\water\sgp_Water.h">
+      <Filter>SGPEngine Modules\sgp_world\water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWaterRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\fullscreenQuad.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_water_refraction.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_water_surface.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\water_refraction.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\water_render.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_RenderStages.h">
+      <Filter>SGPEngine Modules\sgp_render\renderinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_grass_instance.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\grass.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\grass\sgp_Grass.h">
+      <Filter>SGPEngine Modules\sgp_world\grass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLGrassRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\ModifierString\nodepth.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\ModifierString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_CollisionSet.h">
+      <Filter>SGPEngine Modules\sgp_math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sceneobject\sgp_Light.h">
+      <Filter>SGPEngine Modules\sgp_world\sceneobject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\ModifierString\depthbias.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\ModifierString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_LightmapGenConfig.h">
+      <Filter>SGPEngine Modules\sgp_world\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_lightmap.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_lightmap.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelAttachmentDef.h">
+      <Filter>SGPEngine Modules\sgp_model\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_MeshComponent.h">
+      <Filter>SGPEngine Modules\sgp_render\instance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectSystemManager.h">
+      <Filter>SGPEngine Modules\sgp_render\effectsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectInstance.h">
+      <Filter>SGPEngine Modules\sgp_render\effectsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skeltonanim_alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_lightmap_alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_texture_alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_lightmap_alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_texture_alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl\GLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_Font.h">
+      <Filter>SGPEngine Modules\sgp_render\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_opengles2.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTArray.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTContext.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTDecompress.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTError.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTgles2Ext.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTGlobal.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTMap.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTexture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTextureAPI.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\PVRTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImageLoaderPVRTC.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImagePVRTC.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Config.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderDevice.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Texture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TTFFont.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FontBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Camera.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CreationParameter.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ShaderManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLSLES2Shader.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ExtensionHandler.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_quad.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_ui.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CacheBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexCacheManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialRender.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Material.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialProperties.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderBatch.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\camera\sgp_MovementController.h">
+      <Filter>SGPEngine Modules\sgp_render\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_texture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_line.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_skeltonanim.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_hoffmanskydome.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_lightmap.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor_lightmap.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor_texture.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\alphatest.h">
+      <Filter>SGPEngine Modules\sgp_render\materialsystem\MaterialString</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_ps.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleQuadRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleDynamicBuffer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleLineRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticlePointRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2SkydomeRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WorldSystemManager.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TerrainRender.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lod0.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lod1.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lodblend.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_veryhigh.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2GrassRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_grass.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FrameBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WaterRenderer.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_water_refraction.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_water_surface.h">
+      <Filter>SGPEngine Modules\sgp_render\opengles2\GLSLES2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Random.h">
+      <Filter>SGPEngine Modules\sgp_core\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_SoundManager.h">
+      <Filter>SGPEngine Modules\sgp_enginedevice\enginedevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLPixelBufferObject.h">
+      <Filter>SGPEngine Modules\sgp_render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\imconfig.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\imgui.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\imgui_internal.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\stb_rect_pack.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\stb_textedit.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\stb_truetype.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Imgui\ImImpl_RenderDrawLists.h">
+      <Filter>VoronoiMapGen\ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\filedialog\tinyfiledialogs.h">
+      <Filter>VoronoiMapGen\FileDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\OuterOpenGLShaderManager.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\OuterOpenGLShaderTypes.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\outershaders\FilterNormal.h">
+      <Filter>VoronoiMapGen\Source\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VoronoiMapSetting.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\jc_voronoi.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\VoronoiImageHelper.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\Center.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\Corner.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\Edge.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\MapGen.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\NoisyEdges.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TestSample_Camera.h">
+      <Filter>VoronoiMapGen\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\PoissonDiskSampling.h">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\image\stb_image.h">
+      <Filter>VoronoiMapGen\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\image\stb_image_resize.h">
+      <Filter>VoronoiMapGen\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\image\stb_image_write.h">
+      <Filter>VoronoiMapGen\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\pugixml\pugiconfig.hpp">
+      <Filter>VoronoiMapGen\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\pugixml\pugixml.hpp">
+      <Filter>VoronoiMapGen\pugixml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\spg_module_info">
+      <Filter>SGPEngine Modules\sgp_core</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_math\spg_module_info">
+      <Filter>SGPEngine Modules\sgp_math</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Files.mm">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Strings.mm">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_SystemStats.mm">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Threads.mm">
+      <Filter>SGPEngine Modules\sgp_core\native</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_module_info">
+      <Filter>SGPEngine Modules\sgp_render</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_module_info">
+      <Filter>SGPEngine Modules\sgp_enginedevice</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_module_info">
+      <Filter>SGPEngine Modules\sgp_model</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_module_info">
+      <Filter>SGPEngine Modules\sgp_particle</Filter>
+    </None>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_module_info">
+      <Filter>SGPEngine Modules\sgp_world</Filter>
+    </None>
+  </ItemGroup>
+</Project>

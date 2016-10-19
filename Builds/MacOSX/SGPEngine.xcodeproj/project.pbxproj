@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+		9904487176818729C42A698D = { isa = PBXBuildFile; fileRef = B326211573E5DEB7A87D585C; };
+		4072D1233893F3B357623F9A = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPEngine.app; sourceTree = "BUILT_PRODUCTS_DIR"; };
+		53CCF0A71094352B653B5789 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "SOURCE_ROOT"; };
+		B326211573E5DEB7A87D585C = { isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = "SOURCE_ROOT"; };
+		E7CB105DBEF558D6E3F24D43 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SGPHeader.h; path = ../../SGPLibraryCode/SGPHeader.h; sourceTree = "SOURCE_ROOT"; };
+		EF0E0B91086F5F775AF29A9D = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../SGPLibraryCode/AppConfig.h; sourceTree = "SOURCE_ROOT"; };
+		0D16FE59E3259926CD1D8A31 = { isa = PBXGroup; children = (  ); name = Source; sourceTree = "<group>"; };
+		6C344E5D6485E87BEE972E94 = { isa = PBXGroup; children = (
+				0D16FE59E3259926CD1D8A31 ); name = SGPEngine; sourceTree = "<group>"; };
+		2D6DD5AC2359C75DF23BB986 = { isa = PBXGroup; children = (
+				EF0E0B91086F5F775AF29A9D,
+				E7CB105DBEF558D6E3F24D43 ); name = "SGP Library Code"; sourceTree = "<group>"; };
+		F2852DAC37FC07A659B8B089 = { isa = PBXGroup; children = (
+				53CCF0A71094352B653B5789,
+				B326211573E5DEB7A87D585C ); name = Resources; sourceTree = "<group>"; };
+		4C7F0685CEB2B5413754550D = { isa = PBXGroup; children = (  ); name = Frameworks; sourceTree = "<group>"; };
+		789148CA2B154F468625E456 = { isa = PBXGroup; children = (
+				4072D1233893F3B357623F9A ); name = Products; sourceTree = "<group>"; };
+		6B70C77B8259E75773108202 = { isa = PBXGroup; children = (
+				6C344E5D6485E87BEE972E94,
+				2D6DD5AC2359C75DF23BB986,
+				F2852DAC37FC07A659B8B089,
+				4C7F0685CEB2B5413754550D,
+				789148CA2B154F468625E456 ); name = Source; sourceTree = "<group>"; };
+		B1DE097C8B2AB74E1DB50B28 = { isa = XCBuildConfiguration; buildSettings = {
+				HEADER_SEARCH_PATHS = "../../SGPLibraryCode $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT_ppc = macosx10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_DEBUG=1",
+				"DEBUG=1",
+				"JUCER_XCODE_MAC_F6D2F4CF=1"); }; name = Debug; };
+		AC60E628B7BA9B7AE04C32F8 = { isa = XCBuildConfiguration; buildSettings = {
+				HEADER_SEARCH_PATHS = "../../SGPLibraryCode $(inherited)";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT_ppc = macosx10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+				"_NDEBUG=1",
+				"NDEBUG=1",
+				"JUCER_XCODE_MAC_F6D2F4CF=1"); }; name = Release; };
+		14A1650EC99AF6F1C71115A7 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "SGPEngine"; }; name = Debug; };
+		FA877D755D393665C5D75A12 = { isa = XCBuildConfiguration; buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				WARNING_CFLAGS = -Wreorder;
+				GCC_MODEL_TUNING = G5;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				ZERO_LINK = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				PRODUCT_NAME = "SGPEngine"; }; name = Release; };
+		FF0063C62EEF0008F97C6B51 = { isa = XCConfigurationList; buildConfigurations = (
+				14A1650EC99AF6F1C71115A7,
+				FA877D755D393665C5D75A12 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		9F4C3127217B813EAD6FCC4E = { isa = XCConfigurationList; buildConfigurations = (
+				B1DE097C8B2AB74E1DB50B28,
+				AC60E628B7BA9B7AE04C32F8 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		E294EE983C1283B95773724C = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+				9904487176818729C42A698D ); runOnlyForDeploymentPostprocessing = 0; };
+		CCCDAB68E1765C2F2BBA5F58 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		E5022C27284C41D26528FC2C = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (  ); runOnlyForDeploymentPostprocessing = 0; };
+		86B57CEE64E53EEE1E4C32EA = { isa = PBXNativeTarget; buildConfigurationList = 9F4C3127217B813EAD6FCC4E; buildPhases = (
+				E294EE983C1283B95773724C,
+				CCCDAB68E1765C2F2BBA5F58,
+				E5022C27284C41D26528FC2C ); buildRules = ( ); dependencies = ( ); name = SGPEngine; productName = SGPEngine; productReference = 4072D1233893F3B357623F9A; productInstallPath = "$(HOME)/Applications"; productType = "com.apple.product-type.application"; };
+		1FE99DCDCB8DE0B0B82A4A3F = { isa = PBXProject; buildConfigurationList = FF0063C62EEF0008F97C6B51; attributes = { LastUpgradeCheck = 0440; }; compatibilityVersion = "Xcode 3.2"; hasScannedForEncodings = 0; mainGroup = 6B70C77B8259E75773108202; projectDirPath = ""; projectRoot = ""; targets = ( 86B57CEE64E53EEE1E4C32EA ); };
+	};
+	rootObject = 1FE99DCDCB8DE0B0B82A4A3F;
+}

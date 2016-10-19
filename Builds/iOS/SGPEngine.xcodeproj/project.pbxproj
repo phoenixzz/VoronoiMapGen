@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7492E1E1888D052005880EE /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7492E1B1888D004005880EE /* libFreetype2.a */; };
+		E7D4E765187299F20055FBFA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4E764187299F20055FBFA /* OpenGLES.framework */; };
+		E7D4E76718729A120055FBFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4E76618729A120055FBFA /* CoreGraphics.framework */; };
+		E7D4E76918729AA40055FBFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4E76818729AA40055FBFA /* QuartzCore.framework */; };
+		E7D4E76B18729AB60055FBFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4E76A18729AB50055FBFA /* UIKit.framework */; };
+		E7D4E76D18729AD40055FBFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4E76C18729AD40055FBFA /* Foundation.framework */; };
+		E7D4E76F18729BFD0055FBFA /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E76E18729BFD0055FBFA /* Entitlements.plist */; };
+		E7D4E77518729D400055FBFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77018729D400055FBFA /* Default-568h@2x.png */; };
+		E7D4E77618729D400055FBFA /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77118729D400055FBFA /* Default-Portrait.png */; };
+		E7D4E77718729D400055FBFA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77218729D400055FBFA /* Default.png */; };
+		E7D4E77818729D400055FBFA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77318729D400055FBFA /* Default@2x.png */; };
+		E7D4E77918729D400055FBFA /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77418729D400055FBFA /* iTunesArtwork */; };
+		E7D4E78018729D610055FBFA /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77A18729D610055FBFA /* Icon-72.png */; };
+		E7D4E78118729D610055FBFA /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77B18729D610055FBFA /* Icon-Small-50.png */; };
+		E7D4E78218729D610055FBFA /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77C18729D610055FBFA /* Icon-Small.png */; };
+		E7D4E78318729D610055FBFA /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77D18729D610055FBFA /* Icon-Small@2x.png */; };
+		E7D4E78418729D610055FBFA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77E18729D610055FBFA /* Icon.png */; };
+		E7D4E78518729D610055FBFA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D4E77F18729D610055FBFA /* Icon@2x.png */; };
+		E7D4E7871872A3250055FBFA /* sgp_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7861872A3250055FBFA /* sgp_core.mm */; };
+		E7D4E78B1872A36A0055FBFA /* sgp_math.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E78A1872A36A0055FBFA /* sgp_math.mm */; };
+		E7D4E78D1872A37D0055FBFA /* sgp_model.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E78C1872A37D0055FBFA /* sgp_model.mm */; };
+		E7D4E78F1872A3E50055FBFA /* sgp_particle.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E78E1872A3E50055FBFA /* sgp_particle.mm */; };
+		E7D4E7911872A4040055FBFA /* sgp_render.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7901872A4040055FBFA /* sgp_render.mm */; };
+		E7D4E7931872A4310055FBFA /* sgp_world.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7921872A4310055FBFA /* sgp_world.mm */; };
+		E7D4E79B187511000055FBFA /* PVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E798187511000055FBFA /* PVRShell.cpp */; };
+		E7D4E7A1187511360055FBFA /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E79D187511360055FBFA /* AppController.mm */; };
+		E7D4E7A2187511360055FBFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E79E187511360055FBFA /* main.m */; };
+		E7D4E7A3187511360055FBFA /* PVRShellOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E79F187511360055FBFA /* PVRShellOS.cpp */; };
+		E7D4E7A6187511620055FBFA /* PVRShellAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7A4187511620055FBFA /* PVRShellAPI.cpp */; };
+		E7D4E7AA187511730055FBFA /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7A8187511730055FBFA /* EAGLView.mm */; };
+		E7D4E7AE187514EB0055FBFA /* OGLES2_iOSDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7D4E7AC187514EB0055FBFA /* OGLES2_iOSDemo.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7492E1A1888D004005880EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7492E161888D004005880EE /* freetype2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6382B1B10FB0FC5100ECAC02;
+			remoteInfo = Freetype2;
+		};
+		E7492E1C1888D04B005880EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7492E161888D004005880EE /* freetype2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6382B1B00FB0FC5100ECAC02;
+			remoteInfo = Freetype2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4072D1233893F3B357623F9A /* SGPEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGPEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CCF0A71094352B653B5789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7492E161888D004005880EE /* freetype2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = freetype2.xcodeproj; path = "../../OtherLib/FreeType/build-ios/freetype2.xcodeproj"; sourceTree = "<group>"; };
+		E7B006F8187A8BA0009915FF /* libFreetype2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreetype2.a; path = ../../OtherLib/FreeType/ioslib/libFreetype2.a; sourceTree = "<group>"; };
+		E7CB105DBEF558D6E3F24D43 /* SGPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SGPHeader.h; path = ../../SGPLibraryCode/SGPHeader.h; sourceTree = SOURCE_ROOT; };
+		E7D4E764187299F20055FBFA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E7D4E76618729A120055FBFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7D4E76818729AA40055FBFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7D4E76A18729AB50055FBFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7D4E76C18729AD40055FBFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7D4E76E18729BFD0055FBFA /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		E7D4E77018729D400055FBFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		E7D4E77118729D400055FBFA /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "Resources/Default-Portrait.png"; sourceTree = "<group>"; };
+		E7D4E77218729D400055FBFA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		E7D4E77318729D400055FBFA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		E7D4E77418729D400055FBFA /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
+		E7D4E77A18729D610055FBFA /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/OGLES2/Icon-72.png"; sourceTree = "<group>"; };
+		E7D4E77B18729D610055FBFA /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/OGLES2/Icon-Small-50.png"; sourceTree = "<group>"; };
+		E7D4E77C18729D610055FBFA /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/OGLES2/Icon-Small.png"; sourceTree = "<group>"; };
+		E7D4E77D18729D610055FBFA /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/OGLES2/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		E7D4E77E18729D610055FBFA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/OGLES2/Icon.png; sourceTree = "<group>"; };
+		E7D4E77F18729D610055FBFA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/OGLES2/Icon@2x.png"; sourceTree = "<group>"; };
+		E7D4E7861872A3250055FBFA /* sgp_core.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_core.mm; path = ../../SGPLibraryCode/modules/sgp_core/sgp_core.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E78A1872A36A0055FBFA /* sgp_math.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_math.mm; path = ../../SGPLibraryCode/modules/sgp_math/sgp_math.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E78C1872A37D0055FBFA /* sgp_model.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_model.mm; path = ../../SGPLibraryCode/modules/sgp_model/sgp_model.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E78E1872A3E50055FBFA /* sgp_particle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_particle.mm; path = ../../SGPLibraryCode/modules/sgp_particle/sgp_particle.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E7901872A4040055FBFA /* sgp_render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_render.mm; path = ../../SGPLibraryCode/modules/sgp_render/sgp_render.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E7921872A4310055FBFA /* sgp_world.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = sgp_world.mm; path = ../../SGPLibraryCode/modules/sgp_world/sgp_world.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E798187511000055FBFA /* PVRShell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShell.cpp; path = ../../OtherLib/OpenGLES2/Shell/PVRShell.cpp; sourceTree = SOURCE_ROOT; };
+		E7D4E799187511000055FBFA /* PVRShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShell.h; path = ../../OtherLib/OpenGLES2/Shell/PVRShell.h; sourceTree = SOURCE_ROOT; };
+		E7D4E79A187511000055FBFA /* PVRShellImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellImpl.h; path = ../../OtherLib/OpenGLES2/Shell/PVRShellImpl.h; sourceTree = SOURCE_ROOT; };
+		E7D4E79C187511360055FBFA /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ../../OtherLib/OpenGLES2/Shell/OS/iOS/AppController.h; sourceTree = SOURCE_ROOT; };
+		E7D4E79D187511360055FBFA /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ../../OtherLib/OpenGLES2/Shell/OS/iOS/AppController.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E79E187511360055FBFA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../OtherLib/OpenGLES2/Shell/OS/iOS/main.m; sourceTree = SOURCE_ROOT; };
+		E7D4E79F187511360055FBFA /* PVRShellOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShellOS.cpp; path = ../../OtherLib/OpenGLES2/Shell/OS/iOS/PVRShellOS.cpp; sourceTree = SOURCE_ROOT; };
+		E7D4E7A0187511360055FBFA /* PVRShellOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellOS.h; path = ../../OtherLib/OpenGLES2/Shell/OS/iOS/PVRShellOS.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7A4187511620055FBFA /* PVRShellAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PVRShellAPI.cpp; path = ../../OtherLib/OpenGLES2/Shell/API/EAGL/PVRShellAPI.cpp; sourceTree = SOURCE_ROOT; };
+		E7D4E7A5187511620055FBFA /* PVRShellAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRShellAPI.h; path = ../../OtherLib/OpenGLES2/Shell/API/EAGL/PVRShellAPI.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7A7187511730055FBFA /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = ../../OtherLib/OpenGLES2/Shell/API/EAGL/OpenGLSupport/EAGLView.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7A8187511730055FBFA /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = ../../OtherLib/OpenGLES2/Shell/API/EAGL/OpenGLSupport/EAGLView.mm; sourceTree = SOURCE_ROOT; };
+		E7D4E7AC187514EB0055FBFA /* OGLES2_iOSDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OGLES2_iOSDemo.cpp; path = ../../Tools/DEMO_iOS/OGLES2_iOSDemo.cpp; sourceTree = SOURCE_ROOT; };
+		E7D4E7AD187514EB0055FBFA /* OGLES2_iOSDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGLES2_iOSDemo.h; path = ../../Tools/DEMO_iOS/OGLES2_iOSDemo.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7B0187533130055FBFA /* OGLES2_iOSCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGLES2_iOSCamera.h; path = ../../Tools/DEMO_iOS/OGLES2_iOSCamera.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7B1187533130055FBFA /* OGLES2_iOSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGLES2_iOSLogger.h; path = ../../Tools/DEMO_iOS/OGLES2_iOSLogger.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7B218753BC00055FBFA /* OpenGL_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL_Internal.h; path = ../../OtherLib/OpenGLES2/Shell/API/EAGL/OpenGLSupport/OpenGL_Internal.h; sourceTree = SOURCE_ROOT; };
+		E7D4E7B4187553810055FBFA /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
+		EF0E0B91086F5F775AF29A9D /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../SGPLibraryCode/AppConfig.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5022C27284C41D26528FC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7492E1E1888D052005880EE /* libFreetype2.a in Frameworks */,
+				E7D4E76D18729AD40055FBFA /* Foundation.framework in Frameworks */,
+				E7D4E76B18729AB60055FBFA /* UIKit.framework in Frameworks */,
+				E7D4E76918729AA40055FBFA /* QuartzCore.framework in Frameworks */,
+				E7D4E76718729A120055FBFA /* CoreGraphics.framework in Frameworks */,
+				E7D4E765187299F20055FBFA /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D16FE59E3259926CD1D8A31 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E7B0187533130055FBFA /* OGLES2_iOSCamera.h */,
+				E7D4E7B1187533130055FBFA /* OGLES2_iOSLogger.h */,
+				E7D4E7AC187514EB0055FBFA /* OGLES2_iOSDemo.cpp */,
+				E7D4E7AD187514EB0055FBFA /* OGLES2_iOSDemo.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		2D6DD5AC2359C75DF23BB986 /* SGP Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E7861872A3250055FBFA /* sgp_core.mm */,
+				E7D4E78A1872A36A0055FBFA /* sgp_math.mm */,
+				E7D4E78C1872A37D0055FBFA /* sgp_model.mm */,
+				E7D4E7901872A4040055FBFA /* sgp_render.mm */,
+				E7D4E78E1872A3E50055FBFA /* sgp_particle.mm */,
+				E7D4E7921872A4310055FBFA /* sgp_world.mm */,
+				EF0E0B91086F5F775AF29A9D /* AppConfig.h */,
+				E7CB105DBEF558D6E3F24D43 /* SGPHeader.h */,
+			);
+			name = "SGP Library Code";
+			sourceTree = "<group>";
+		};
+		4C7F0685CEB2B5413754550D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B006F8187A8BA0009915FF /* libFreetype2.a */,
+				E7D4E76C18729AD40055FBFA /* Foundation.framework */,
+				E7D4E76A18729AB50055FBFA /* UIKit.framework */,
+				E7D4E76818729AA40055FBFA /* QuartzCore.framework */,
+				E7D4E76618729A120055FBFA /* CoreGraphics.framework */,
+				E7D4E764187299F20055FBFA /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B70C77B8259E75773108202 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7492E161888D004005880EE /* freetype2.xcodeproj */,
+				6C344E5D6485E87BEE972E94 /* SGPEngineiOSDemo */,
+				2D6DD5AC2359C75DF23BB986 /* SGP Library Code */,
+				F2852DAC37FC07A659B8B089 /* Resources */,
+				4C7F0685CEB2B5413754550D /* Frameworks */,
+				789148CA2B154F468625E456 /* Products */,
+				E7D4E76E18729BFD0055FBFA /* Entitlements.plist */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		6C344E5D6485E87BEE972E94 /* SGPEngineiOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E7B31875536B0055FBFA /* Other Source */,
+				E7D4E795187510670055FBFA /* PVRShell */,
+				0D16FE59E3259926CD1D8A31 /* Source */,
+			);
+			name = SGPEngineiOSDemo;
+			sourceTree = "<group>";
+		};
+		789148CA2B154F468625E456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4072D1233893F3B357623F9A /* SGPEngine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7492E171888D004005880EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7492E1B1888D004005880EE /* libFreetype2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7D4E795187510670055FBFA /* PVRShell */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E7A8187511730055FBFA /* EAGLView.mm */,
+				E7D4E79D187511360055FBFA /* AppController.mm */,
+				E7D4E79E187511360055FBFA /* main.m */,
+				E7D4E79F187511360055FBFA /* PVRShellOS.cpp */,
+				E7D4E798187511000055FBFA /* PVRShell.cpp */,
+				E7D4E7A4187511620055FBFA /* PVRShellAPI.cpp */,
+				E7D4E7B218753BC00055FBFA /* OpenGL_Internal.h */,
+				E7D4E7A7187511730055FBFA /* EAGLView.h */,
+				E7D4E7A5187511620055FBFA /* PVRShellAPI.h */,
+				E7D4E79C187511360055FBFA /* AppController.h */,
+				E7D4E7A0187511360055FBFA /* PVRShellOS.h */,
+				E7D4E799187511000055FBFA /* PVRShell.h */,
+				E7D4E79A187511000055FBFA /* PVRShellImpl.h */,
+			);
+			name = PVRShell;
+			sourceTree = "<group>";
+		};
+		E7D4E7B31875536B0055FBFA /* Other Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E7B4187553810055FBFA /* Prefix.pch */,
+			);
+			name = "Other Source";
+			sourceTree = "<group>";
+		};
+		F2852DAC37FC07A659B8B089 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4E77A18729D610055FBFA /* Icon-72.png */,
+				E7D4E77B18729D610055FBFA /* Icon-Small-50.png */,
+				E7D4E77C18729D610055FBFA /* Icon-Small.png */,
+				E7D4E77D18729D610055FBFA /* Icon-Small@2x.png */,
+				E7D4E77E18729D610055FBFA /* Icon.png */,
+				E7D4E77F18729D610055FBFA /* Icon@2x.png */,
+				E7D4E77018729D400055FBFA /* Default-568h@2x.png */,
+				E7D4E77118729D400055FBFA /* Default-Portrait.png */,
+				E7D4E77218729D400055FBFA /* Default.png */,
+				E7D4E77318729D400055FBFA /* Default@2x.png */,
+				E7D4E77418729D400055FBFA /* iTunesArtwork */,
+				53CCF0A71094352B653B5789 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86B57CEE64E53EEE1E4C32EA /* SGPEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4C3127217B813EAD6FCC4E /* Build configuration list for PBXNativeTarget "SGPEngine" */;
+			buildPhases = (
+				E294EE983C1283B95773724C /* Resources */,
+				CCCDAB68E1765C2F2BBA5F58 /* Sources */,
+				E5022C27284C41D26528FC2C /* Frameworks */,
+				E7492FCC18890BA7005880EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7492E1D1888D04B005880EE /* PBXTargetDependency */,
+			);
+			name = SGPEngine;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SGPEngine;
+			productReference = 4072D1233893F3B357623F9A /* SGPEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FE99DCDCB8DE0B0B82A4A3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = FF0063C62EEF0008F97C6B51 /* Build configuration list for PBXProject "SGPEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B70C77B8259E75773108202 /* Source */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E7492E171888D004005880EE /* Products */;
+					ProjectRef = E7492E161888D004005880EE /* freetype2.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				86B57CEE64E53EEE1E4C32EA /* SGPEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E7492E1B1888D004005880EE /* libFreetype2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFreetype2.a;
+			remoteRef = E7492E1A1888D004005880EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E294EE983C1283B95773724C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D4E77618729D400055FBFA /* Default-Portrait.png in Resources */,
+				E7D4E78518729D610055FBFA /* Icon@2x.png in Resources */,
+				E7D4E77918729D400055FBFA /* iTunesArtwork in Resources */,
+				E7D4E76F18729BFD0055FBFA /* Entitlements.plist in Resources */,
+				E7D4E78318729D610055FBFA /* Icon-Small@2x.png in Resources */,
+				E7D4E77818729D400055FBFA /* Default@2x.png in Resources */,
+				E7D4E77518729D400055FBFA /* Default-568h@2x.png in Resources */,
+				E7D4E78118729D610055FBFA /* Icon-Small-50.png in Resources */,
+				E7D4E78018729D610055FBFA /* Icon-72.png in Resources */,
+				E7D4E78418729D610055FBFA /* Icon.png in Resources */,
+				E7D4E77718729D400055FBFA /* Default.png in Resources */,
+				E7D4E78218729D610055FBFA /* Icon-Small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7492FCC18890BA7005880EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\ncp -Rf \"$PROJECT_DIR/../../Data2\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCDAB68E1765C2F2BBA5F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D4E7871872A3250055FBFA /* sgp_core.mm in Sources */,
+				E7D4E78B1872A36A0055FBFA /* sgp_math.mm in Sources */,
+				E7D4E78D1872A37D0055FBFA /* sgp_model.mm in Sources */,
+				E7D4E7931872A4310055FBFA /* sgp_world.mm in Sources */,
+				E7D4E78F1872A3E50055FBFA /* sgp_particle.mm in Sources */,
+				E7D4E7911872A4040055FBFA /* sgp_render.mm in Sources */,
+				E7D4E7A2187511360055FBFA /* main.m in Sources */,
+				E7D4E7AA187511730055FBFA /* EAGLView.mm in Sources */,
+				E7D4E79B187511000055FBFA /* PVRShell.cpp in Sources */,
+				E7D4E7A1187511360055FBFA /* AppController.mm in Sources */,
+				E7D4E7A6187511620055FBFA /* PVRShellAPI.cpp in Sources */,
+				E7D4E7A3187511360055FBFA /* PVRShellOS.cpp in Sources */,
+				E7D4E7AE187514EB0055FBFA /* OGLES2_iOSDemo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7492E1D1888D04B005880EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Freetype2;
+			targetProxy = E7492E1C1888D04B005880EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14A1650EC99AF6F1C71115A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					"DEBUG=1",
+					BUILD_OGLES2,
+					TARGET_OS_IPHONE,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = SGPEngine;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../../SGPLibraryCode ../../OtherLib/FreeType/include";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		AC60E628B7BA9B7AE04C32F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					BUILD_OGLES2,
+					TARGET_OS_IPHONE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					../../SGPLibraryCode,
+					../../OtherLib/FreeType/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Release;
+		};
+		B1DE097C8B2AB74E1DB50B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					BUILD_OGLES2,
+					TARGET_OS_IPHONE,
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					../../SGPLibraryCode,
+					../../OtherLib/FreeType/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		FA877D755D393665C5D75A12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					BUILD_OGLES2,
+					TARGET_OS_IPHONE,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = SGPEngine;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../../SGPLibraryCode ../../OtherLib/FreeType/include";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F4C3127217B813EAD6FCC4E /* Build configuration list for PBXNativeTarget "SGPEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DE097C8B2AB74E1DB50B28 /* Debug */,
+				AC60E628B7BA9B7AE04C32F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0063C62EEF0008F97C6B51 /* Build configuration list for PBXProject "SGPEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A1650EC99AF6F1C71115A7 /* Debug */,
+				FA877D755D393665C5D75A12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FE99DCDCB8DE0B0B82A4A3F /* Project object */;
+}

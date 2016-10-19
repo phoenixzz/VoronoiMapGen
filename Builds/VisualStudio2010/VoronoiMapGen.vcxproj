@@ -1,0 +1,1197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76106118-6F36-1EC9-93CC-F5C57438AEFF}</ProjectGuid>
+    <ProjectName>VoronoiMapGen</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VoronoiMapGen</TargetName>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VoronoiMapGen</TargetName>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\SGPLibraryCode;..\..\OtherLib\FreeType\include\;..\..\OtherLib\VLD\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;DEBUG;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)VoronoiMapGen.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)\SGPEngine.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\OtherLib\VLD\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\SGPEngine.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\SGPLibraryCode;..\..\OtherLib\FreeType\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)VoronoiMapGen.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)\SGPEngine.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)\SGPEngine.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Colour.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_MemoryBlock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Random.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Result.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_DirectoryIterator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_File.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileInputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileOutputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_ConsoleLogger.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_FileLogger.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_Logger.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_Files.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_SystemStats.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_Threads.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_Files.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_SystemStats.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_linux_Threads.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_posix_NamedPipe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_Files.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_SystemStats.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_win32_Threads.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\sgp_core.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_FileInputSource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryInputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryOutputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_OutputStream.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_SystemStats.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharacterFunctions.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_String.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringArray.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringPool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Thread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_RelativeTime.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_Time.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlDocument.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlElement.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_device.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_VideoModeList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\native\sgp_Device_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_enginedevice.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_AABBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_CollisionSet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Frustum.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Matrix4x4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_OBBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Plane.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Polygon.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Quaternion.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Ray.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Uuid.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_math\sgp_math.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileBone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMesh.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_model.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_BufferHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Define.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Emitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Factory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Group.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Interpolator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Model.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Modifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Particle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Registerable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_System.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Transformable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Zone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_NormalEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_RandomEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_SphericEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_LinearForce.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_Obstacle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_PointMass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_AABBoxZone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_LineZone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PlaneZone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_RingZone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_SphereZone.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_particle.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\camera\sgp_MovementController.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectInstance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectSystemManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_InstanceManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_MeshComponent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_SkeletonMeshInstance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_StaticMeshInstance.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_AbstractMaterial.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelResource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTDecompress.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTError.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTgles2Ext.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTexture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTextureAPI.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImageLoaderPVRTC.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImagePVRTC.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_opengles2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CacheBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Camera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ExtensionHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FontBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FrameBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2GrassRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Material.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialProperties.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleDynamicBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleLineRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticlePointRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleQuadRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderBatch.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderDevice.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ShaderManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2SkydomeRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TerrainRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Texture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TTFFont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexCacheManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WaterRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WorldSystemManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLSLES2Shader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLee.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_opengl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCacheBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCamera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLExtensionHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFontBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFrameBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLGrassRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLHelpers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterial.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialProperties.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleDynamicBuffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleLineRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticlePointRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleQuadRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLPixelBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderBatch.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderDevice.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLShaderManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSkydomeRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSLShader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTerrainRender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTexture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTextureBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTTFFont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexBufferObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexCacheManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWaterRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWorldSystemManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_ResourceMultiThreadLoader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_render.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ColorConverter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageDDS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderDDS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderTGA.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageUncompressed.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\grass\sgp_Grass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\quadtree\sgp_QuadTree.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_world.cpp" />
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\skydome\sgp_Skydome.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_Terrain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainChunk.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\filedialog\tinyfiledialogs.cpp" />
+    <ClCompile Include="..\..\Source\Imgui\imgui.cpp" />
+    <ClCompile Include="..\..\Source\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\Source\model\Center.cpp" />
+    <ClCompile Include="..\..\Source\model\MapGen.cpp" />
+    <ClCompile Include="..\..\Source\model\NoisyEdges.cpp" />
+    <ClCompile Include="..\..\Source\model\PoissonDiskSampling.cpp" />
+    <ClCompile Include="..\..\Source\OuterOpenGLShaderManager.cpp" />
+    <ClCompile Include="..\..\Source\pugixml\pugixml.cpp" />
+    <ClCompile Include="..\..\Source\TestSample_Win32Console.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SGPLibraryCode\AppConfig.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Array.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ArrayAllocationBase.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ArrayStack.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Atomic.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ByteOrder.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Colour.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_DataType.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ElementComparator.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_HashMap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_HeapBlock.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_LinkedListPointer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Memory.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_MemoryBlock.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_OwnedArray.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_PackStruct.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Random.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ReferenceCountedObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Result.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_RingFIFO.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_ScopedPointer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_Singleton.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_SortedSet.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\common\sgp_UnPackStruct.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_DirectoryIterator.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_File.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileInputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\files\sgp_FileOutputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_ConsoleLogger.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_FileLogger.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\log\sgp_Logger.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_android_JNIHelpers.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_BasicNativeHeaders.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_osx_ObjCHelpers.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_posix_SharedCode.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\sgp_core.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_FileInputSource.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputSource.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_InputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryInputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_MemoryOutputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\streams\sgp_OutputStream.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_PlatformDefs.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_StandardHeader.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_SystemStats.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\system\sgp_TargetPlatform.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharacterFunctions.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_ASCII.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF16.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF32.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_CharPointer_UTF8.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_NewLine.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_String.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringArray.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\text\sgp_StringPool.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_CriticalSection.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_DynamicLibrary.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Process.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_ScopedLock.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_SpinLock.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_Thread.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_ThreadLocalValue.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\threads\sgp_WaitableEvent.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_RelativeTime.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\time\sgp_Time.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlDocument.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_core\xml\sgp_XmlElement.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_CreationParameter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_device.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_EngineTimer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_event.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_SoundManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\enginedevice\sgp_VideoModeList.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\native\sgp_Device_win32.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_enginedevice.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_AABBox.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_CollisionSet.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Frustum.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_MathHelper.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Matrix4x4.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_OBBox.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_PerlinNoise.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Plane.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Polygon.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Quaternion.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Ray.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Uuid.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector2D.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector3D.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\math\sgp_Vector4D.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_math\sgp_math.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelAttachmentDef.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileBone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMesh.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileMeshConfigSetting.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_modelFileSettingFlag.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\model\sgp_particleParamDef.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_model.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_ArrayBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Buffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_BufferHandler.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Define.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Emitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Factory.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Group.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Interpolator.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Model.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Modifier.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Particle.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Pool.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Registerable.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_RegWrapper.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Renderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_System.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Transformable.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\core\sgp_SPARK_Zone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_NormalEmitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_RandomEmitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_SphericEmitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_StaticEmitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\emitters\sgp_SPARK_StraightEmitter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_LinearForce.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_Obstacle.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\modifiers\sgp_SPARK_PointMass.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_LineRendererInterface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_Oriented2DRendererInterface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_Oriented3DRendererInterface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_PointRendererInterface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\renderers\sgp_SPARK_QuadRendererInterface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_AABBoxZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_LineZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PlaneZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_PointZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_RingZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\extension\zones\sgp_SPARK_SphereZone.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_particle.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\camera\sgp_MovementController.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectInstance.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\effectsystem\sgp_EffectSystemManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_Font.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontDrawFlags.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\font\sgp_FontManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_InstanceManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_MeshComponent.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_SkeletonMeshInstance.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\instance\sgp_StaticMeshInstance.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\Font.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\fullscreenQuad.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\grass.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\line.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\opaque_base.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\particle_addalpha.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\particle_addalpha_line.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\skydome.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\terrain.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\transparent.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\water_refraction.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\MaterialString\water_render.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\ModifierString\depthbias.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\ModifierString\nodepth.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_AbstractMaterial.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialProperties.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\materialsystem\sgp_MaterialSystem.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\modelsystem\sgp_ModelResource.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_android.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_ios.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_linux.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\native\sgp_OpenGL_osx.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_grass.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_hoffmanskydome.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_lightmap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_line.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_ps.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_particle_quad.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_skeltonanim.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lod0.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lod1.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_lodblend.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_terrain_veryhigh.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_ui.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor_lightmap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_vertexcolor_texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_water_refraction.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\GLSLES2\glsl_water_surface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTArray.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTContext.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTDecompress.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTError.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTgles2Ext.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTGlobal.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTMap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTexture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\PVRTTexture\PVRTTextureAPI.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImageLoaderPVRTC.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_ImagePVRTC.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_opengles2.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CacheBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Camera.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Config.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2CreationParameter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ExtensionHandler.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FontBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2FrameBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2GrassRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Material.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialProperties.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2MaterialRender.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleDynamicBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleLineRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticlePointRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ParticleQuadRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderBatch.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2RenderDevice.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2ShaderManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2SkydomeRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TerrainRender.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2Texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2TTFFont.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2VertexCacheManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WaterRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLES2WorldSystemManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengles2\sgp_OpenGLSLES2Shader.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLee.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_grass_instance.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_hoffmanskydome.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_lightmap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_lightmap_alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_line.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_ps.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_particle_quad.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skeltonanim.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skeltonanim_alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_skydome.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lod0.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lod1.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_lodblend.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_terrain_veryhigh.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_texture_alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_ui.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_lightmap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_lightmap_alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_vertexcolor_texture_alphatest.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_water_refraction.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\GLSL\glsl_water_surface.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_opengl.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCacheBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLCamera.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLConfig.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLExtensionHandler.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFontBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLFrameBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLGrassRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLHelpers.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterial.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialProperties.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLMaterialRender.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleDynamicBuffer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleLineRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticlePointRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLParticleQuadRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLPixelBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderBatch.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLRenderDevice.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLShaderManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSkydomeRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLSLShader.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTerrainRender.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTexture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTextureBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLTTFFont.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexBufferObject.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLVertexCacheManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWaterRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\opengl\sgp_OpenGLWorldSystemManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleRenderer.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\particlesystem\sgp_ParticleSystem.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_DriverFeatures.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_DriverTypes.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_MaterialFlags.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_PixelFormats.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_RenderDevice.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_RenderStages.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_ResourceMultiThreadLoader.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\renderinterface\sgp_Viewport.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_render.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\shadersystem\sgp_ShaderManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\shadersystem\sgp_ShaderTypes.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Blit.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ColorConverter.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Image.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageDDS.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoader.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderDDS.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageLoaderTGA.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_ImageUncompressed.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_Texture.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\texturesystem\sgp_TextureResource.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_HardwareBufferType.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_PrimitiveTypes.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexBufferSkin.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexCacheManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\vertexsystem\sgp_VertexTypes.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_render\worldsystem\sgp_WorldSystemManager.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\grass\sgp_Grass.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\quadtree\sgp_QuadTree.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\scattering\sgp_HoffmanPreethem.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\scattering\sgp_WorldSun.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sceneobject\sgp_Light.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sceneobject\sgp_Object.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_world.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\skydome\sgp_Skydome.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_Terrain.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainChunk.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\terrain\sgp_TerrainTileShape.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\water\sgp_Water.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_LightmapGenConfig.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldConfig.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\modules\sgp_world\world\sgp_WorldMap.h" />
+    <ClInclude Include="..\..\SGPLibraryCode\SGPHeader.h" />
+    <ClInclude Include="..\..\Source\filedialog\tinyfiledialogs.h" />
+    <ClInclude Include="..\..\Source\image\stb_image.h" />
+    <ClInclude Include="..\..\Source\image\stb_image_resize.h" />
+    <ClInclude Include="..\..\Source\image\stb_image_write.h" />
+    <ClInclude Include="..\..\Source\Imgui\imconfig.h" />
+    <ClInclude Include="..\..\Source\Imgui\imgui.h" />
+    <ClInclude Include="..\..\Source\Imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\Source\Imgui\ImImpl_RenderDrawLists.h" />
+    <ClInclude Include="..\..\Source\Imgui\stb_rect_pack.h" />
+    <ClInclude Include="..\..\Source\Imgui\stb_textedit.h" />
+    <ClInclude Include="..\..\Source\Imgui\stb_truetype.h" />
+    <ClInclude Include="..\..\Source\jc_voronoi.h" />
+    <ClInclude Include="..\..\Source\model\Center.h" />
+    <ClInclude Include="..\..\Source\model\Corner.h" />
+    <ClInclude Include="..\..\Source\model\Edge.h" />
+    <ClInclude Include="..\..\Source\model\MapGen.h" />
+    <ClInclude Include="..\..\Source\model\NoisyEdges.h" />
+    <ClInclude Include="..\..\Source\model\PoissonDiskSampling.h" />
+    <ClInclude Include="..\..\Source\OuterOpenGLShaderManager.h" />
+    <ClInclude Include="..\..\Source\OuterOpenGLShaderTypes.h" />
+    <ClInclude Include="..\..\Source\outershaders\FilterNormal.h" />
+    <ClInclude Include="..\..\Source\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="..\..\Source\pugixml\pugixml.hpp" />
+    <ClInclude Include="..\..\Source\TestSample_Camera.h" />
+    <ClInclude Include="..\..\Source\VoronoiImageHelper.h" />
+    <ClInclude Include="..\..\Source\VoronoiMapSetting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Files.mm" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Strings.mm" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_SystemStats.mm" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\native\sgp_mac_Threads.mm" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_core\spg_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_enginedevice\sgp_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_math\spg_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_model\sgp_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_particle\sgp_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_render\sgp_module_info" />
+    <None Include="..\..\SGPLibraryCode\modules\sgp_world\sgp_module_info" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

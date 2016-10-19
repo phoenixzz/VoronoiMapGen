@@ -1,0 +1,20 @@
+{
+  "id":             "sgp_model",
+  "name":           "SGPEngine Model handling classes",
+  "version":        "1.0.00",
+  "description":    "Classes for Mesh Model, skeleton animation, etc.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",   "version": "matching" },
+                      { "id": "sgp_math",   "version": "matching" } ],
+
+  "include":        "sgp_model.h",
+
+  "compile":        [ { "file": "sgp_model.cpp", "target": "! xcode" },
+                      { "file": "sgp_model.mm",  "target": "xcode" } ],
+
+  "browse":         [ "model/*" ],
+
+  "LinuxLibs":      "X11"
+}

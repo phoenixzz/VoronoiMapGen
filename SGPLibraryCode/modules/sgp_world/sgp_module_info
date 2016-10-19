@@ -1,0 +1,28 @@
+{
+  "id":             "sgp_world",
+  "name":           "SGPEngine Scene Management and World handling classes",
+  "version":        "1.0.00",
+  "description":    "Classes for World System, etc.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",   "version": "matching" },
+                      { "id": "sgp_math",   "version": "matching" },
+                      { "id": "sgp_model",  "version": "matching" } ],
+
+  "include":        "sgp_world.h",
+
+  "compile":        [ { "file": "sgp_world.cpp", "target": "! xcode" },
+                      { "file": "sgp_world.mm",  "target": "xcode" } ],
+
+  "browse":         [ "scattering/*",
+                      "terrain/*",
+                      "skydome/*",
+                      "water/*",
+                      "grass/*",
+                      "quadtree/*",
+                      "sceneobject/*",
+                      "world/*" ],
+
+  "LinuxLibs":      "X11"
+}

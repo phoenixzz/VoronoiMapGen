@@ -1,0 +1,40 @@
+#ifndef __SGP_MODELATTACHMENTDEFINE_HEADER__
+#define __SGP_MODELATTACHMENTDEFINE_HEADER__
+
+enum SGP_ATTACHMENT_DEFINE
+{
+	SGPATTDEF_HEAD = 0,
+
+	SGPATTDEF_BODY,
+
+	SGPATTDEF_RIGHTHAND,
+	SGPATTDEF_LEFTHAND,
+
+	SGPATTDEF_RIGHTSHOULDER,
+	SGPATTDEF_LEFTSHOULDER,
+
+	SGPATTDEF_RIGHTFOOT,
+	SGPATTDEF_LEFTFOOT,
+
+	SGPATTDEF_MAXATTACHMENT,
+
+};
+
+static const char* g_AttachmentName[SGPATTDEF_MAXATTACHMENT] = 
+{
+	"attc.Head",
+
+	"attc.Body",
+
+	"attc.RightHand",
+	"attc.LeftHand",
+
+	"attc.RightShoulder",
+	"attc.LeftShoulder",
+
+	"attc.RightFoot",
+	"attc.LeftFoot",
+};
+
+
+#endif		// __SGP_MODELATTACHMENTDEFINE_HEADER__

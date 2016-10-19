@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "sgp::COpenGLES2RenderDevice::createTexture(sgp::ISGPImage*, sgp::String const&amp;, bool):sgp_OpenGLES2RenderDevice.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)0x09bb72e8">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OGLESIntroducingPVRShell::InitView():OGLES2_iOSDemo.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)0x8ca55d8">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "sgp::COpenGLES2TerrainRenderer::setChunkTextures(unsigned int, unsigned char, sgp::String const&amp;):sgp_OpenGLES2TerrainRender.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)0x09c50ba8">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "sgp::COpenGLES2RenderDevice::CreateFontInManager(char const*, sgp::String const&amp;, bool, bool, unsigned short):sgp_OpenGLES2RenderDevice.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)0x0a225108">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "sgp::COpenGLSLES2ShaderProgram::setShaderUniform(char const*, int):sgp_OpenGLSLES2Shader.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "sgp::CPVRTgles2Ext::LoadExtensions():PVRTgles2Ext.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)pszGLExtensions">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

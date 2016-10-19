@@ -1,0 +1,30 @@
+{
+  "id":             "sgp_core",
+  "name":           "SGP core classes",
+  "version":        "1.0.00",
+  "description":    "The essential set of basic SGPEngine classes, as required by all the other modules. Includes text, container, memory, threading and i/o functionality.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [],
+
+  "include":        "sgp_core.h",
+
+  "compile":        [ { "file": "sgp_core.cpp", "target": "! xcode" },
+                      { "file": "sgp_core.mm",  "target": "xcode" } ],
+
+  "browse":         [ "text/*",
+                      "common/*",
+                      "threads/*",
+                      "time/*",
+                      "files/*",
+                      "log/*",
+                      "streams/*",
+                      "system/*",
+                      "xml/*",
+                      "native/*" ],
+
+  "OSXFrameworks":  "Cocoa IOKit",
+  "iOSFrameworks":  "Foundation",
+  "LinuxLibs":      "rt dl pthread"
+}

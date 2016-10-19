@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/PVR File Format.Specification.pdf</key>
+		<data>
+		s0fcViNg/vX+0x89QDlQlc52vx8=
+		</data>
+		<key>Resources/PVRTexTool.User Manual.pdf</key>
+		<data>
+		eW4iRm7jucDBFrDt+VsiCCYRo1g=
+		</data>
+		<key>Resources/PVRTexToolOSX.icns</key>
+		<data>
+		mZ7VKBVTLXsGUhz7MaQSHPNtFYo=
+		</data>
+		<key>Resources/PVRTexTool_DDS.icns</key>
+		<data>
+		69gDuiryrgqTUC4ZnzaIvUU5Ihc=
+		</data>
+		<key>Resources/PVRTexTool_KTX.icns</key>
+		<data>
+		orwvIPjnu5nC6/RjuzCpJt1JXU4=
+		</data>
+		<key>Resources/PVRTexTool_PVR.icns</key>
+		<data>
+		PMKkIDuhKiNxfk9VlmDkYf9Fsk4=
+		</data>
+		<key>Resources/qt.conf</key>
+		<data>
+		KT08aiOIy1k+9vqxoKjgVYon0CM=
+		</data>
+		<key>Resources/update.ini</key>
+		<data>
+		e7jfe/3IEa4b9bi5Aol9GAMAS/w=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

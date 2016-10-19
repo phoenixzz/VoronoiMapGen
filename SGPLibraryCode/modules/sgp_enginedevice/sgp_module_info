@@ -1,0 +1,25 @@
+{
+  "id":             "sgp_enginedevice",
+  "name":           "SGPEngine message and event handling classes",
+  "version":        "1.0.00",
+  "description":    "Classes for running an application's main event loop and sending/receiving messages, etc.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",      "version": "matching" },
+                      { "id": "sgp_math",      "version": "matching" },
+					            { "id": "sgp_model",     "version": "matching" },
+                      { "id": "sgp_particle",  "version": "matching" },
+                      { "id": "sgp_world",     "version": "matching" },
+                      { "id": "sgp_render",    "version": "matching" } ],
+
+  "include":        "sgp_enginedevice.h",
+
+  "compile":        [ { "file": "sgp_enginedevice.cpp", "target": "! xcode" },
+                      { "file": "sgp_enginedevice.mm",  "target": "xcode" } ],
+
+  "browse":         [ "enginedevice/*",
+                      "native/*" ],
+
+  "LinuxLibs":      "X11"
+}

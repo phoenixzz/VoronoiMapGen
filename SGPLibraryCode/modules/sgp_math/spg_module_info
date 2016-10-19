@@ -1,0 +1,17 @@
+{
+  "id":             "sgp_math",
+  "name":           "SGP math function helper classes",
+  "version":        "1.0.00",
+  "description":    "Classes for math functions.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",   "version": "matching" } ],
+
+  "include":        "sgp_math.h",
+
+  "compile":        [ { "file": "sgp_math.cpp", "target": "! xcode" },
+                      { "file": "sgp_math.mm",  "target": "xcode" } ],
+
+  "browse":         [ "math/*" ]
+}

@@ -1,0 +1,39 @@
+{
+  "id":             "sgp_render",
+  "name":           "SGPEngine RenderDevice classes",
+  "version":        "1.0.00",
+  "description":    "Classes for rendering in SGP Engine.",
+  "website":        "",
+  "license":        "GPL/Commercial",
+
+  "dependencies":   [ { "id": "sgp_core",            "version": "matching" },
+                      { "id": "sgp_math",            "version": "matching" },
+                      { "id": "sgp_model",           "version": "matching" },
+                      { "id", "sgp_world",           "version": "matching" },
+                      { "id": "sgp_particle",        "version": "matching" } ],
+
+  "include":        "sgp_render.h",
+
+  "compile":        [ { "file": "sgp_render.cpp", "target": "! xcode" },
+                      { "file": "sgp_render.mm",  "target": "xcode" } ],
+
+  "browse":         [ "opengl/*",
+                      "opengles2/*",
+                      "camera/*",
+                      "native/*",
+                      "renderinterface/*",
+                      "shadersystem/*",
+                      "materialsystem/*",
+                      "modelsystem/*",
+                      "font/*",
+                      "texturesystem/*",
+                      "vertexsystem/*",
+                      "instance/*",
+                      "particlesystem/*",
+                      "effectsystem/*",
+                      "worldsystem/*" ],
+
+  "OSXFrameworks":  "OpenGL",
+  "iOSFrameworks":  "OpenGLES",
+  "LinuxLibs":      "GL"
+}
