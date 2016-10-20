@@ -26,6 +26,10 @@ Run the exe Executable file under Bin\Debug\ or Bin\Release floder, some paramet
  - site number also can be changed, but using 4000 or 8000 points can be slow.
  - The PNG output is now 1024x1024, and draws the selected mode (biomes, polygons, smooth, 2d slopes, 3d slopes etc.). 
  - The PNG output and XML output will be generated under the Data\Output\ directory.
+ 
+Example
+-------
+![Map Generation example](Data\Output\map.png)
 
 Requirements
 -------
