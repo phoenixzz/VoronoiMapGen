@@ -29,7 +29,7 @@ Run the exe Executable file under Bin\Debug\ or Bin\Release floder, some paramet
  
 Example
 -------
-![Map Generation example](Data\Output\map.png)
+![Map Generation example](https://github.com/phoenixzz/VoronoiMapGen/blob/master/Data/Output/map.png)
 
 Requirements
 -------
