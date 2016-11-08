@@ -818,6 +818,7 @@
     <ClCompile Include="..\..\Source\model\MapGen.cpp" />
     <ClCompile Include="..\..\Source\model\NoisyEdges.cpp" />
     <ClCompile Include="..\..\Source\model\PoissonDiskSampling.cpp" />
+    <ClCompile Include="..\..\Source\model\Roads.cpp" />
     <ClCompile Include="..\..\Source\OuterOpenGLShaderManager.cpp" />
     <ClCompile Include="..\..\Source\pugixml\pugixml.cpp" />
     <ClCompile Include="..\..\Source\TestSample_Win32Console.cpp" />
@@ -1170,6 +1171,7 @@
     <ClInclude Include="..\..\Source\model\MapGen.h" />
     <ClInclude Include="..\..\Source\model\NoisyEdges.h" />
     <ClInclude Include="..\..\Source\model\PoissonDiskSampling.h" />
+    <ClInclude Include="..\..\Source\model\Roads.h" />
     <ClInclude Include="..\..\Source\OuterOpenGLShaderManager.h" />
     <ClInclude Include="..\..\Source\OuterOpenGLShaderTypes.h" />
     <ClInclude Include="..\..\Source\outershaders\FilterNormal.h" />

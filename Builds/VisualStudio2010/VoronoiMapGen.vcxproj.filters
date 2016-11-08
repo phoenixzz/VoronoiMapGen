@@ -753,6 +753,9 @@
     <ClCompile Include="..\..\Source\pugixml\pugixml.cpp">
       <Filter>VoronoiMapGen\pugixml</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\model\Roads.cpp">
+      <Filter>VoronoiMapGen\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\SGPLibraryCode\AppConfig.h">
@@ -1819,6 +1822,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\pugixml\pugixml.hpp">
       <Filter>VoronoiMapGen\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\model\Roads.h">
+      <Filter>VoronoiMapGen\Model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,7 @@ class Edge;
 class Corner;
 class CVoionoiMapSetting;
 class NoisyEdges;
+class Roads;
 
 typedef struct _jcv_diagram jcv_diagram;
 typedef struct _jcv_edge jcv_edge;
@@ -20,10 +21,10 @@ public:
 	HashMap<uint32, Edge*> EdgesMap;
 	HashMap<uint32, Corner*> CornersMap;
 	NoisyEdges* MapNoisyEdges;
-
+	Roads* MapRoads;
 
 public:
-	MapGen() : MapX(0), MapY(0), MapSettingParams(NULL), MapNoisyEdges(NULL) {}
+	MapGen() : MapX(0), MapY(0), MapSettingParams(NULL), MapNoisyEdges(NULL), MapRoads(NULL) {}
 	~MapGen();
 
 	Center* CreateCenter(float ax, float ay);
@@ -47,7 +48,8 @@ private:
         return (x >= 0 && x < MapX) && (y >= 0 && y < MapY);
     }
 	void BuildNoisyEdges();
-
+	void CreateRoads();
+	Vector2D normalTowards(Edge* e, Vector2D c, float len);
 
 	// ISLAND
 	void CreateIsland();
@@ -84,6 +86,7 @@ private:
 	void renderSmoothPolygons();
 	void renderNoisyPolygons();
 	void renderEdges();
+	void renderRoads();
 
 	// SMOOTH
 	inline Colour interpolateColor(Colour Color0, Colour Color1, float f)

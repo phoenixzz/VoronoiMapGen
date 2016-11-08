@@ -286,6 +286,89 @@ static void draw_lineAA(int x0, int y0, int x1, int y1, unsigned char* image, in
 	}
 }
 
+/* plot a limited quadratic Bezier segment */
+static void plotQuadBezierSeg(int x0, int y0, int x1, int y1, int x2, int y2, unsigned char* image, int width, int height, int nchannels, unsigned char* color)
+{                                  
+	int sx = x2-x1, sy = y2-y1;
+	long xx = x0-x1, yy = y0-y1, xy;                  /* relative values for checks */
+	double dx, dy, err, cur = xx*sy-yy*sx;                             /* curvature */
 
+	//jassert(xx*sx <= 0 && yy*sy <= 0);		    /* sign of gradient must not change */
+
+	if (sx*(long)sx+sy*(long)sy > xx*xx+yy*yy)		      /* begin with longer part */
+	{      
+		x2 = x0; x0 = sx+x1; y2 = y0; y0 = sy+y1; cur = -cur;         /* swap P0 P2 */
+	}
+	if (cur != 0) 
+	{															/* no straight line */
+		xx += sx; xx *= sx = x0 < x2 ? 1 : -1;                  /* x step direction */
+		yy += sy; yy *= sy = y0 < y2 ? 1 : -1;                  /* y step direction */
+		xy = 2*xx*yy; xx *= xx; yy *= yy;                 /* differences 2nd degree */
+		if (cur*sx*sy < 0)
+		{												      /* negated curvature? */
+			xx = -xx; yy = -yy; xy = -xy; cur = -cur;
+		}
+		dx = 4.0*sy*cur*(x1-x0)+xx-xy;                    /* differences 1st degree */
+		dy = 4.0*sx*cur*(y0-y1)+yy-xy;
+		xx += xx; yy += yy; err = dx+dy+xy;                       /* error 1st step */
+		do {
+			plot(x0,y0, image, width, height, nchannels, color);	  /* plot curve */
+			if (x0 == x2 && y0 == y2) return;       /* last pixel -> curve finished */
+			y1 = 2*err < dx;                       /* save value for test of y step */
+			if (2*err > dy) { x0 += sx; dx -= xy; err += dy += yy; }      /* x step */
+			if (    y1    ) { y0 += sy; dy -= xy; err += dx += xx; }      /* y step */
+		} while (dy < 0 && dx > 0);          /* gradient negates -> algorithm fails */
+	}
+	draw_line(x0,y0, x2,y2, image, width, height, nchannels, color);    /* plot remaining part to end */
+}
+
+/* draw an limited anti-aliased quadratic Bezier segment */
+static void plotQuadBezierSegAA(int x0, int y0, int x1, int y1, int x2, int y2, unsigned char* image, int width, int height, int nchannels, unsigned char* color)
+{                    
+	int sx = x2-x1, sy = y2-y1;
+	long xx = x0-x1, yy = y0-y1, xy;              /* relative values for checks */
+	double dx, dy, err, ed, cur = xx*sy-yy*sx;                     /* curvature */
+
+	//assert(xx*sx <= 0 && yy*sy <= 0);     /* sign of gradient must not change */
+
+	if (sx*(long)sx+sy*(long)sy > xx*xx+yy*yy)		  /* begin with longer part */
+	{     
+		x2 = x0; x0 = sx+x1; y2 = y0; y0 = sy+y1; cur = -cur;     /* swap P0 P2 */
+	}
+	if (cur != 0)
+	{                                                       /* no straight line */
+		xx += sx; xx *= sx = x0 < x2 ? 1 : -1;              /* x step direction */
+		yy += sy; yy *= sy = y0 < y2 ? 1 : -1;              /* y step direction */
+		xy = 2*xx*yy; xx *= xx; yy *= yy;             /* differences 2nd degree */
+		if (cur*sx*sy < 0) {                              /* negated curvature? */
+			xx = -xx; yy = -yy; xy = -xy; cur = -cur;
+		}
+		dx = 4.0*sy*(x1-x0)*cur+xx-xy;                /* differences 1st degree */
+		dy = 4.0*sx*(y0-y1)*cur+yy-xy;
+		xx += xx; yy += yy; err = dx+dy+xy;                   /* error 1st step */
+		do {
+			cur = min(dx+xy,-xy-dy);
+			ed = max(dx+xy,-xy-dy);               /* approximate error distance */
+			ed += 2*ed*cur*cur/(4*ed*ed+cur*cur);
+			plotAA(x0,y0,										  /* plot curve */
+				image, width, height, nchannels, color, fabs(err-dx-dy-xy)/ed);          
+			if (x0 == x2 || y0 == y2) break;    /* last pixel -> curve finished */
+			x1 = x0; cur = dx-err; y1 = 2*err+dy < 0;
+			if (2*err+dx > 0) 
+			{														  /* x step */
+				if (err-dy < ed) plotAA(x0,y0+sy, image, width, height, nchannels, color, fabs(err-dy)/ed);
+				x0 += sx; dx -= xy; err += dy += yy;
+			}
+			if (y1) 
+			{														  /* y step */
+				if (cur < ed) 
+					plotAA(x1+sx,y0, image, width, height, nchannels, color, fabs(cur)/ed);
+				y0 += sy; dy -= xy; err += dx += xx;
+			}
+		} while (dy < dx);                  /* gradient negates -> close curves */
+	}
+	/* plot remaining needle to end */
+	draw_lineAA(x0,y0, x2,y2, image, width, height, nchannels, color);                  
+}
 
 #endif

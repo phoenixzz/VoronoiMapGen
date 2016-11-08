@@ -10,6 +10,7 @@
 #include "Corner.h"
 #include "Edge.h"
 #include "NoisyEdges.h"
+#include "Roads.h"
 #include "PoissonDiskSampling.h"
 
 #include "MapGen.h"
@@ -130,7 +131,12 @@ void MapGen::ResetMap()
 	{
 		delete MapNoisyEdges;
 		MapNoisyEdges = NULL;
-	}	
+	}
+	if (MapRoads)
+	{
+		delete MapRoads;
+		MapRoads = NULL;
+	}
 }
 
 void MapGen::LoadMap(CVoionoiMapSetting* pMapParams)
@@ -240,6 +246,8 @@ void MapGen::LoadMap(CVoionoiMapSetting* pMapParams)
 
 	CreateIsland();
 
+	CreateRoads();
+	
 	BuildNoisyEdges();
 	
 	DrawMap();
@@ -1026,6 +1034,15 @@ void MapGen::BuildNoisyEdges()
 	MapNoisyEdges->BuildNoisyEdges(CentersMap, MapSettingParams);
 }
 
+void MapGen::CreateRoads()
+{
+	if (!MapRoads)
+	{
+		MapRoads = new Roads();
+		MapRoads->createRoads(CentersMap, MapSettingParams);
+	}
+}
+
 void MapGen::Fill3DVertex(Array<Array<SGPVertex_UPOS_VERTEXCOLOR>> &VertexList, Array<Array<uint16>> &VertexIdxList)
 {
 	VertexList.clear();
@@ -1191,6 +1208,14 @@ void MapGen::DrawMap()
 			{
 				renderNoisyPolygons();
 			}
+
+			if (MapSettingParams->RenderMode != CVoionoiMapSetting::e2DSlopes &&
+				MapSettingParams->RenderMode != CVoionoiMapSetting::e3DSlopes &&
+				MapSettingParams->NeedRoad)
+			{
+				renderRoads();
+			}
+
 			renderEdges();
 		}
 	}
@@ -1804,6 +1829,106 @@ void MapGen::renderSlopePolygons()
 	}
 }
 
+// Render roads. We draw these before polygon edges, so that rivers overwrite roads.
+void MapGen::renderRoads()
+{
+	float fRoadWidth = 1.1f;
+	//ROAD1: 0x442211,
+	//ROAD2: 0x553322,
+	//ROAD3: 0x664433,
+	Colour RoadTypeColor[3] = { Colour(0xFF442211), Colour(0xFF553322), Colour(0xFF664433) };
+	unsigned char color_roads[3] = { 0, 0, 0 };
+
+	// First draw the roads, because any other feature should draw over them.
+	// Also, roads don't use the noisy lines.
+	HashMap<uint32, Center*>::Iterator i (CentersMap);
+    while (i.next())
+    {
+		Center* p = i.getValue();
+		if (p)
+		{
+			if (MapRoads->roadConnections.contains(p->Index))
+			{
+				if (MapRoads->roadConnections[p->Index]->size() == 2) 
+				{
+					// Regular road: draw a spline from one edge to the other.
+					Array<Edge*> edges(p->Borders);
+					for (int i = 0; i < edges.size(); i++)
+					{
+						Edge* edge1 = edges[i];
+						if (MapRoads->road[edge1->Index] > 0)
+						{
+							for (int j = i+1; j < edges.size(); j++) 
+							{
+								Edge* edge2 = edges[j];
+								if (MapRoads->road[edge2->Index] > 0)
+								{
+									// The spline connects the midpoints of the edges
+									// and at right angles to them. In between we
+									// generate two control points A and B and one
+									// additional vertex C.  This usually works but not always.
+									float d = 0.5f * min((edge1->Midpoint - p->Point).GetLength(), (edge2->Midpoint - p->Point).GetLength());
+									Vector2D A = normalTowards(edge1, p->Point, d) + edge1->Midpoint;
+									Vector2D B = normalTowards(edge2, p->Point, d) + edge2->Midpoint;
+									Vector2D C = (A + B) * 0.5f;
+
+									color_roads[0] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getRed();
+									color_roads[1] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getGreen();
+									color_roads[2] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getBlue();
+									plotQuadBezierSegAA(edge1->Midpoint.x, edge1->Midpoint.y, A.x, A.y, C.x, C.y,
+										MapSettingParams->image, MapX, MapY, 3, color_roads);
+
+									color_roads[0] = RoadTypeColor[MapRoads->road[edge2->Index] - 1].getRed();
+									color_roads[1] = RoadTypeColor[MapRoads->road[edge2->Index] - 1].getGreen();
+									color_roads[2] = RoadTypeColor[MapRoads->road[edge2->Index] - 1].getBlue();
+									plotQuadBezierSegAA(C.x, C.y, B.x, B.y, edge2->Midpoint.x, edge2->Midpoint.y,
+										MapSettingParams->image, MapX, MapY, 3, color_roads);
+								}
+							}
+						}
+					}
+				}
+				else
+				{
+					// Intersection or dead end: draw a road spline from each edge to the center
+					for (int i = 0; i < p->Borders.size(); i++)
+					{
+						Edge* edge1 = p->Borders[i];
+						if (MapRoads->road[edge1->Index] > 0)
+						{
+							float d = 0.25f * (edge1->Midpoint - p->Point).GetLength();
+							Vector2D A = normalTowards(edge1, p->Point, d) + edge1->Midpoint;
+
+							color_roads[0] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getRed();
+							color_roads[1] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getGreen();
+							color_roads[2] = RoadTypeColor[MapRoads->road[edge1->Index] - 1].getBlue();
+							plotQuadBezierSegAA(edge1->Midpoint.x, edge1->Midpoint.y, A.x, A.y, p->Point.x, p->Point.y,
+								MapSettingParams->image, MapX, MapY, 3, color_roads);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Helper function: find the normal vector across edge 'e' and make sure to point it in a direction towards 'c'.
+Vector2D MapGen::normalTowards(Edge* e, Vector2D c, float len)
+{
+	// Rotate the v0-->v1 vector by 90 degrees:
+	Vector2D n(-(e->pVoronoiEnd->Point.y - e->pVoronoiStart->Point.y), e->pVoronoiEnd->Point.x - e->pVoronoiStart->Point.x);
+    // Flip it around it if doesn't point towards c
+	Vector2D d  = c - e->Midpoint;
+    if (n.x * d.x + n.y * d.y < 0) 
+	{
+        n.x = -n.x;
+        n.y = -n.y;
+    }
+	n.Normalize();
+	n = n * len;
+    return n;
+}
+
 void MapGen::ExportXML(const char* xmlFileName)
 {
 	if (!xmlFileName)
@@ -1924,7 +2049,14 @@ void MapGen::ExportXML(const char* xmlFileName)
 		}
 	}
 
-
+	pugi::xml_node road = root.append_child("roads");
+	HashMap<uint32, uint32>::Iterator rr (MapRoads->road);
+    while (rr.next())
+    {
+		pugi::xml_node ro = road.append_child("road");
+		ro.append_attribute("edge") = rr.getKey();
+		ro.append_attribute("contour") = rr.getValue();
+	}
 /*
 	// add a custom declaration node
 	pugi::xml_node decl = doc.prepend_child(pugi::node_declaration);

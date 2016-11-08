@@ -71,9 +71,11 @@ public:
 
 	Vector3D lightDirection;
 
+	bool NeedRoad;
+
 public:
 	CVoionoiMapSetting() : image(NULL), imagesize(0), uSitesNum(500), uImageWidth(600), uImageHeight(600),
-		RelaxationNum(0), globalRandom(NULL), globalSeed(0), detailSeed(0), islandSeed(0),
+		RelaxationNum(0), globalRandom(NULL), globalSeed(0), detailSeed(0), islandSeed(0), NeedRoad(false),
 		IslandShapeType(eRadialIsland), RandomGridType(eRelaxed), RenderMode(ePolygons)
 	{
 		lightDirection.x = 1;

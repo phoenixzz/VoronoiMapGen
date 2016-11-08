@@ -78,6 +78,7 @@ public:
 	int gridType;
 	int rendermode;
 	float lightdir[3];
+	bool needRoad;
 
 
 	void Export(CVoionoiMapSetting * setting)
@@ -92,6 +93,7 @@ public:
 		setting->RandomGridType = static_cast<CVoionoiMapSetting::ERandomGrid>(gridType);
 		setting->RenderMode = static_cast<CVoionoiMapSetting::ERenderMode>(rendermode);
 		setting->lightDirection.Set(lightdir[0], lightdir[1], lightdir[2]);
+		setting->NeedRoad = needRoad;
 	}
 	void Set(CVoionoiMapSetting * setting)
 	{
@@ -107,6 +109,7 @@ public:
 		lightdir[0] = setting->lightDirection.x;
 		lightdir[1] = setting->lightDirection.y;
 		lightdir[2] = setting->lightDirection.z;
+		needRoad = setting->NeedRoad;
 	}
 	bool NeedResetCameraMode(CVoionoiMapSetting * setting)
 	{
@@ -117,23 +120,7 @@ public:
 		return false;
 	}
 
-	//bool IsSettingEqual(CVoionoiMapSetting * setting)
-	//{
-	//	return	(randomseed == setting->islandSeed) &&
-	//			(variantseed == setting->detailSeed) &&
-	//			(imgwidth == setting->uImageWidth) && (imgheight == setting->uImageHeight) &&
-	//			(siteNum == setting->uSitesNum) &&
-	//			(islandshape == (int)setting->IslandShapeType) &&
-	//			(relaxationNum == setting->RelaxationNum) &&
-	//			(gridType == (int)setting->RandomGridType) &&
-	//			(rendermode == (int)setting->RenderMode);
-	//}
-	//bool IsLightDirEqual(CVoionoiMapSetting * setting)
-	//{
-	//	return  (lightdir[0] == setting->lightDirection.x) &&
-	//			(lightdir[1] == setting->lightDirection.y) &&
-	//			(lightdir[2] == setting->lightDirection.z);
-	//}
+
 };
 
 class MyEventReceiver : public ISGPEventReceiver
@@ -766,6 +753,8 @@ int main()
 			ImGui::Text("View:");
 			const char* modeitems[] = { "Polygons", "Biomes", "Elevation", "Moisture", "SmoothPolygon", "2D slopes", "3D slopes" };
 			ImGui::Combo("##rendermode", &guiset.rendermode, modeitems, 7);
+			if ((guiset.rendermode != (int)CVoionoiMapSetting::e3DSlopes) && (guiset.rendermode != (int)CVoionoiMapSetting::e2DSlopes))
+				ImGui::Checkbox("NeedRoads", &guiset.needRoad);
 
 			ImGui::Separator();
 			ImGui::Spacing();

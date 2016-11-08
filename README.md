@@ -24,6 +24,7 @@ Run the exe Executable file under Bin\Debug\ or Bin\Release floder, some paramet
  - Radial, Perlin, Square, Blob are about the island shape.
  - Relaxed, PoissonDisk, Squared, Hexagon are about how the map is divided up into polygons.
  - site number also can be changed, but using 4000 or 8000 points can be slow.
+ - Roads also be calculated according to contour lines along the corners. Where the contour level changes, there’s a road. 
  - The PNG output is now 1024x1024, and draws the selected mode (biomes, polygons, smooth, 2d slopes, 3d slopes etc.). 
  - The PNG output and XML output will be generated under the Data\Output\ directory.
  
@@ -39,7 +40,7 @@ You can open Builds\VisualStudio2010\VoronoiMapGen.sln with VS 2010, Compile and
 
 Developed By
 -------
-I would like to give thanks to the people whose libraries helped make this project a reality:
+I would like to give thanks to the people whose libraries helped make this project a reality(It seems changing my project from C++ to C! orz:)):
 
 - [ImGui](https://github.com/ocornut/imgui)  Immediate Mode Graphical User interface for C++ with minimal dependencies
 - [stb_image.h](https://github.com/nothings/stb/blob/master/stb_image.h)Single file Library: image loading/decoding from file/memory: JPG, PNG, TGA, BMP, PSD, GIF, HDR, PIC
@@ -47,5 +48,6 @@ I would like to give thanks to the people whose libraries helped make this proje
 - [stb_image_write.h](https://github.com/nothings/stb/blob/master/stb_image_write.h)Single file Library: image writing to disk: PNG, TGA, BMP
 - [tinyfiledialogs](https://sourceforge.net/projects/tinyfiledialogs/) Single file Library: modal dialogs inc. file open/save
 - [pugixml](http://pugixml.org/) Light-weight, simple and fast XML parser for C++ with XPath support
+- [Bresenham's algorithm](http://members.chello.at/~easyfilter/bresenham.html) The Beauty of Bresenham's Algorithm
 
 by phoenixzz (Weng xiao yi) - <phoenixzz@sina.com>
